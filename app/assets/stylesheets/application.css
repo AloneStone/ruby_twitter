@@ -1,0 +1,100 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+    background-color: #dadada;
+}
+
+a.action-button {
+
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+
+    padding: 2px 10px;
+    margin: 10px 10px 10px 0px;
+    /*float: left ;*/
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+    color: #FFF;
+    text-decoration: none;
+
+    background-color: #E74C3C;
+    border-bottom: 5px solid #BD3E31;
+    text-shadow: 0px -2px #BD3E31;
+
+}
+
+.action-button:active{
+
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+
+}
+
+#name {
+    font-family: 'Pacifico', cursive;
+}
+
+.containerlogo {
+    position: relative;
+    width: 100%;
+
+
+    /*padding-left: 50%;
+    padding-right: 50%;
+    padding-bottom: 0%;
+    padding-top: 0%;*/
+    /*border-bottom: 1px solid rgba(0,0,0,0.15);*/
+}
+
+.logo {
+    width: 3em;
+    height: 3em;
+    animation: bounceIn 0.6s;
+    transform: rotate(0deg) scale(1) translateZ(0);
+    transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.bubble { fill: #E74C3C; }
+.icon { fill:  #fff; }
+
+@keyframes bounceIn {
+    0% {
+        opacity: 1;
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,50 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+ul, li{
+  list-style: none;
+  display: inline;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  width: 30px;
+  height: 15px;
+}
+
+
+
+table,tbody,td, tr{
+  text-align: center;
+  width: 100%;
+}
+
+img {
+  height: 8em;
+  width: 8em;
+  border-radius: 10px ;
+}
+
+div {
+  float: left;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+td {
+  margin: 10%;
+  text-align: center;
+}
+
+#name{
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+
+#bio {
+  text-align: center;
+}
+
+
