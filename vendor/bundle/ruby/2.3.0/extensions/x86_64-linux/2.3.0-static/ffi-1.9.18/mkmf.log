@@ -238,8 +238,8 @@ checked program was:
 /* end */
 
 "gcc -o conftest -I/opt/ruby233/include/ruby-2.3.0/x86_64-linux -I/opt/ruby233/include/ruby-2.3.0/ruby/backward -I/opt/ruby233/include/ruby-2.3.0 -I. -I/usr/lib64/libffi-3.1/include     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c  -L. -L/opt/ruby233/lib -Wl,-R/opt/ruby233/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic -L/usr/lib64/../lib64    -lffi  -lffi -Wl,-R/opt/ruby233/lib -L/opt/ruby233/lib -lruby-static -lffi  -lffi -lpthread -ldl -lcrypt -lm   -lc"
-/tmp/cceDXsIG.o: dans la fonction « t »:
-/users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.18/ext/ffi_c/conftest.c:14: référence indéfinie vers « rb_thread_blocking_region »
+/tmp/ccy9yKuM.o: dans la fonction « t »:
+/users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.18/ext/ffi_c/conftest.c:14: référence indéfinie vers « rb_thread_blocking_region »
 collect2: erreur: ld a retourné 1 code d'état d'exécution
 checked program was:
 /* begin */

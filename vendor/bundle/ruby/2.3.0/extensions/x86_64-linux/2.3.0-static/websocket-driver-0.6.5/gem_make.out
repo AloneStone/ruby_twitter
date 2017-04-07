@@ -1,15 +1,21 @@
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/websocket-driver-0.6.5/ext/websocket-driver
-/opt/ruby233/bin/ruby -r ./siteconf20170309-8907-1k3q2nj.rb extconf.rb 
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+/opt/ruby233/bin/ruby -r ./siteconf20170406-28064-p1pjld.rb extconf.rb 
 creating Makefile
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/websocket-driver-0.6.5/ext/websocket-driver
 make "DESTDIR=" clean
+make: Warning: File 'Makefile' has modification time 0,28 s in the future
+make: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/websocket-driver-0.6.5/ext/websocket-driver
 make "DESTDIR="
+make: Warning: File 'Makefile' has modification time 0,27 s in the future
 compiling websocket_mask.c
 linking shared-object websocket_mask.so
+make: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/websocket-driver-0.6.5/ext/websocket-driver
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20170309-8907-1ckromo
+make: Warning: File 'Makefile' has modification time 0,18 s in the future
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20170406-28064-1g73qzz
+make: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.

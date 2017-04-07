@@ -1,19 +1,25 @@
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
-/opt/ruby233/bin/ruby -r ./siteconf20170309-8907-14mujs0.rb extconf.rb 
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+/opt/ruby233/bin/ruby -r ./siteconf20170406-28064-1ds217y.rb extconf.rb 
 creating Makefile
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
 make "DESTDIR=" clean
+make: Warning: File 'Makefile' has modification time 0,27 s in the future
+make: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
 make "DESTDIR="
+make: Warning: File 'Makefile' has modification time 0,27 s in the future
 compiling locker.c
 compiling byebug.c
 compiling threads.c
 compiling breakpoint.c
 compiling context.c
 linking shared-object byebug/byebug.so
+make: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 byebug.so ./.gem.20170309-8907-1tgdjrp/byebug
+make: Warning: File 'byebug.so' has modification time 0,27 s in the future
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20170406-28064-cfa3gg/byebug
+make: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.

@@ -1,5 +1,6 @@
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.18/ext/ffi_c
-/opt/ruby233/bin/ruby -r ./siteconf20170309-8907-gjxd2z.rb extconf.rb 
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.18/ext/ffi_c
+/opt/ruby233/bin/ruby -r ./siteconf20170406-28064-131xadv.rb extconf.rb 
+/opt/ruby233/lib/ruby/2.3.0/mkmf.rb:1547: warning: Insecure world writable dir /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor in PATH, mode 040777
 checking for ffi_call() in -lffi... yes
 checking for ffi_prep_closure()... yes
 checking for ffi_raw_call()... yes
@@ -14,13 +15,16 @@ creating Makefile
 
 To see why this extension failed to compile, please check the mkmf.log which can be found here:
 
-  /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0-static/ffi-1.9.18/mkmf.log
+  /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0-static/ffi-1.9.18/mkmf.log
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.18/ext/ffi_c
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.18/ext/ffi_c
 make "DESTDIR=" clean
+make: Warning: File 'Makefile' has modification time 0,26 s in the future
+make: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.18/ext/ffi_c
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.18/ext/ffi_c
 make "DESTDIR="
+make: Warning: File 'Makefile' has modification time 0,26 s in the future
 compiling ArrayType.c
 compiling StructByValue.c
 compiling ffi.c
@@ -47,7 +51,10 @@ compiling DynamicLibrary.c
 compiling Struct.c
 compiling Call.c
 linking shared-object ffi_c.so
+make: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.18/ext/ffi_c
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.18/ext/ffi_c
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20170309-8907-jlywq9
+make: Warning: File 'ffi_c.so' has modification time 0,27 s in the future
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20170406-28064-oezwv
+make: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.

@@ -1,6 +1,7 @@
 have_header: checking for unistd.h... -------------------- yes
 
 "gcc -o conftest -I/opt/ruby233/include/ruby-2.3.0/x86_64-linux -I/opt/ruby233/include/ruby-2.3.0/ruby/backward -I/opt/ruby233/include/ruby-2.3.0 -I.     -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat conftest.c  -L. -L/opt/ruby233/lib -Wl,-R/opt/ruby233/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-R/opt/ruby233/lib -L/opt/ruby233/lib -lruby-static  -lpthread -ldl -lcrypt -lm   -lc"
+/opt/ruby233/lib/ruby/2.3.0/mkmf.rb:395: warning: Insecure world writable dir /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor in PATH, mode 040777
 checked program was:
 /* begin */
 1: #include "ruby.h"

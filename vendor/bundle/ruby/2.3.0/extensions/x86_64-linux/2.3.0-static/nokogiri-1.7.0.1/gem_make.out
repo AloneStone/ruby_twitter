@@ -1,5 +1,5 @@
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ext/nokogiri
-/opt/ruby233/bin/ruby -r ./siteconf20170309-8907-1ndw0oe.rb extconf.rb 
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ext/nokogiri
+/opt/ruby233/bin/ruby -r ./siteconf20170406-28064-1tb197d.rb extconf.rb 
 checking if the C compiler accepts ... yes
 Building nokogiri using packaged libraries.
 Using mini_portile version 2.1.0
@@ -31,7 +31,7 @@ Extracting libxml2-2.9.4.tar.gz into tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.4
 Running 'configure' for libxml2 2.9.4... OK
 Running 'compile' for libxml2 2.9.4... OK
 Running 'install' for libxml2 2.9.4... OK
-Activating libxml2 2.9.4 (from /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ports/x86_64-pc-linux-gnu/libxml2/2.9.4)...
+Activating libxml2 2.9.4 (from /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ports/x86_64-pc-linux-gnu/libxml2/2.9.4)...
 ************************************************************************
 IMPORTANT NOTICE:
 
@@ -55,7 +55,7 @@ Extracting libxslt-1.1.29.tar.gz into tmp/x86_64-pc-linux-gnu/ports/libxslt/1.1.
 Running 'configure' for libxslt 1.1.29... OK
 Running 'compile' for libxslt 1.1.29... OK
 Running 'install' for libxslt 1.1.29... OK
-Activating libxslt 1.1.29 (from /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ports/x86_64-pc-linux-gnu/libxslt/1.1.29)...
+Activating libxslt 1.1.29 (from /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ports/x86_64-pc-linux-gnu/libxslt/1.1.29)...
 checking for main() in -llzma... yes
 checking for xmlParseDoc() in libxml/parser.h... yes
 checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
@@ -71,13 +71,16 @@ creating Makefile
 
 To see why this extension failed to compile, please check the mkmf.log which can be found here:
 
-  /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0-static/nokogiri-1.7.0.1/mkmf.log
+  /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0-static/nokogiri-1.7.0.1/mkmf.log
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ext/nokogiri
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ext/nokogiri
 make "DESTDIR=" clean
+make: Warning: File 'Makefile' has modification time 0,27 s in the future
+make: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ext/nokogiri
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ext/nokogiri
 make "DESTDIR="
+make: Warning: File 'Makefile' has modification time 0,27 s in the future
 compiling xml_node_set.c
 compiling xml_comment.c
 compiling xml_xpath_context.c
@@ -246,9 +249,10 @@ compiling xml_document_fragment.c
 compiling xml_element_decl.c
 linking shared-object nokogiri/nokogiri.so
 Cleaning files only used during build.
-rm -rf /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports
-rm -rf /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ports
+rm -rf /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports
+rm -rf /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ports
+make: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ext/nokogiri
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.7.0.1/ext/nokogiri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20170309-8907-633edx/nokogiri
+/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20170406-28064-1iulcb/nokogiri

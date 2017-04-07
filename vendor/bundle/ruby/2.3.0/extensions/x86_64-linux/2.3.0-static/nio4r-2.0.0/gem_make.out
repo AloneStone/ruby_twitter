@@ -1,5 +1,5 @@
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nio4r-2.0.0/ext/nio4r
-/opt/ruby233/bin/ruby -r ./siteconf20170309-8907-17lm83q.rb extconf.rb 
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nio4r-2.0.0/ext/nio4r
+/opt/ruby233/bin/ruby -r ./siteconf20170406-28064-1716f59.rb extconf.rb 
 checking for unistd.h... yes
 checking for sys/select.h... yes
 checking for poll.h... yes
@@ -11,13 +11,16 @@ creating Makefile
 
 To see why this extension failed to compile, please check the mkmf.log which can be found here:
 
-  /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0-static/nio4r-2.0.0/mkmf.log
+  /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0-static/nio4r-2.0.0/mkmf.log
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nio4r-2.0.0/ext/nio4r
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nio4r-2.0.0/ext/nio4r
 make "DESTDIR=" clean
+make: Warning: File 'Makefile' has modification time 0,27 s in the future
+make: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nio4r-2.0.0/ext/nio4r
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nio4r-2.0.0/ext/nio4r
 make "DESTDIR="
+make: Warning: File 'Makefile' has modification time 0,27 s in the future
 compiling bytebuffer.c
 bytebuffer.c: In function ‘NIO_ByteBuffer_set_position’:
 bytebuffer.c:130:5: attention : ISO C89 interdit les mélanges de déclarations et de code [-Wdeclaration-after-statement]
@@ -355,7 +358,10 @@ selector.c:112:5: attention : déréférencement du pointeur type-punned brisera
 selector.c:112:5: attention : déréférencement du pointeur type-punned brisera les strictes d'aliases [-Wstrict-aliasing]
 selector.c:112:5: attention : déréférencement du pointeur type-punned brisera les strictes d'aliases [-Wstrict-aliasing]
 linking shared-object nio4r_ext.so
+make: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
 
-current directory: /users/lpro/casir/planeilb/TPs/rail/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nio4r-2.0.0/ext/nio4r
+current directory: /users/lpro/casir/planeilb/public_html/rails/ruby_twitter/vendor/bundle/ruby/2.3.0/gems/nio4r-2.0.0/ext/nio4r
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20170309-8907-1jvic6y
+make: Warning: File 'nio4r_ext.so' has modification time 0,27 s in the future
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20170406-28064-78ynhm
+make: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
