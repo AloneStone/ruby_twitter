@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170330062416) do
+ActiveRecord::Schema.define(version: 20170501173927) do
+
+  create_table "favorites", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "tweet_id"
+  end
+
+  create_table "follows", force: :cascade do |t|
+    t.integer "follower_id"
+    t.integer "followed_id"
+  end
 
   create_table "tweets", force: :cascade do |t|
     t.string   "content"
