@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  resources :users
-  resources :tweets
-  root to: 'users#index'
-  root 'users#index' # shortcut for the above
+  Rails.application.routes.draw do
+    root 'users#index'
+  end
+  resources :users do
+    resources :tweets
+  end
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

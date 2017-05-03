@@ -1,23 +1,23 @@
 <!--<p id="notice"><%= notice %></p>-->
 
-    <% @users.each do |user| %>
-        <div class = "note-list">
+   <p>hello<% @user %></p>
+<div class = "note-list">
           <table>
-        <tr><td><img src=<%= user.img_url %> alt="Smileyface"></td></tr>
-        <tr><td id="name"><%= link_to user.name, user %></td></tr>
-        <tr><td id="bio"><%= user.bio %></td></tr>
-        <!--<td><%= user.img_url %></td>-->
+        <tr><td><img src=<%= @user.img_url %> alt="Smileyface"></td></tr>
+        <tr><td id="name"><%= link_to @user.name, @user %></td></tr>
+        <tr><td id="bio"><%= @user.bio %></td></tr>
+        <!--<td><%= @user.img_url %></td>-->
           </table>
         <ul>
-          <!--<li><%= link_to 'Show', user, class:'action-button shadow animate red' %></li>-->
-          <!--<li><%= link_to 'Edit', edit_user_path(user), class:'action-button shadow animate red' %></li>-->
-          <li><%= link_to 'Supprimer', user,class:'action-button shadow animate red', method: :delete, data: { confirm: 'Are you sure?' } %></li>
+          <!--<li><%= link_to 'Show', @user, class:'action-button shadow animate red' %></li>-->
+          <!--<li><%= link_to 'Edit', edit_user_path(@user), class:'action-button shadow animate red' %></li>-->
+         <!-- <li><%= link_to 'Supprimer', @user,class:'action-button shadow animate red', method: :delete, data: { confirm: 'Are you sure?' } %></li>-->
         </ul>
 
 
         </div>
 
-    <% end %>
+
 
 <br>
 

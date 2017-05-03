@@ -1,48 +1,48 @@
-class TweetsController < ApplicationController
-  before_action :set_tweet, only: [:show, :edit, :update, :destroy]
+  class TweetsController < ApplicationController
+  before_action :set_user #, only: [:show, :edit, :update, :destroy]
 
-  # GET /tweets
-  # GET /tweets.json
+  # GET /users/tweets
+  # GET /users/tweets.json
   def index
     @tweets = Tweet.all
   end
 
-  # GET /tweets/1
-  # GET /tweets/1.json
+  # GET /users/1/tweets/1
+  # GET /users/1/tweets/1.json
   def show
+    #format.html { redirect_to @user }
   end
 
-  # GET /tweets/new
+  # GET /users/tweets/new
   def new
     @tweet = Tweet.new
   end
 
-  # GET /tweets/1/edit
+  # GET /users/tweets/1/edit
   def edit
   end
 
-  # POST /tweets
-  # POST /tweets.json
+  # POST /users/1/tweet
+  # POST /users/1/tweet.json
   def create
-    @tweet = Tweet.new(tweet_params)
-
+    @tweet = Tweet.new(content: params[:tweet][:content], user_id: @user.id)
     respond_to do |format|
       if @tweet.save
-        format.html { redirect_to @tweet, notice: 'Tweet was successfully created.' }
-        format.json { render :show, status: :created, location: @tweet }
+        format.html { redirect_to @user }
+        format.json { render :show, status: :created, location: @user }
       else
-        format.html { render :new }
-        format.json { render json: @tweet.errors, status: :unprocessable_entity }
+        format.html { redirect_to @user }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # PATCH/PUT /tweets/1
-  # PATCH/PUT /tweets/1.json
+  # PATCH/PUT /users/1/tweets/1
+  # PATCH/PUT /users/1/tweets/1.json
   def update
     respond_to do |format|
       if @tweet.update(tweet_params)
-        format.html { redirect_to @tweet, notice: 'Tweet was successfully updated.' }
+        format.html { redirect_to @user, notice: 'Tweet was successfully updated.' }
         format.json { render :show, status: :ok, location: @tweet }
       else
         format.html { render :edit }
@@ -70,5 +70,11 @@ class TweetsController < ApplicationController
   # Never trust parameters from the scary internet, only allow the white list through.
   def tweet_params
     params.require(:tweet).permit(:content, :id_user)
+  end
+
+  private
+  # Use callbacks to share common setup or constraints between actions.
+  def set_user
+    @user = User.find(params[:user_id])
   end
 end

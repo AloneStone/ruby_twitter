@@ -10,6 +10,23 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    #@tweets = @user.tweets
+    #@new_tweet = Tweet.new
+
+    @tweets = []
+    @user.followings.each do |f|
+      f.posts.each do |p|
+        @tweets << p
+      end
+    end
+    @user.tweets.each do |p|
+      @tweets << p
+    end
+
+    @tweets.sort_by{|e| e[:created_at]}
+
+    @tweets = @user.tweets
+    @new_tweet = Tweet.new
   end
 
   # GET /users/new
