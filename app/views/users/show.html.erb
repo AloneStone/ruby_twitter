@@ -1,29 +1,28 @@
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+<div class="show">
 
-<p>
-  <strong>Img url:</strong>
-  <%= @user.img_url %>
-</p>
+<div class = "note-list">
 
-<p>
-  <strong>Bio:</strong>
-  <%= @user.bio %>
-</p>
+  <table >
+    <tr><td><img src=<%= @user.img_url %> alt="Smileyface"></td></tr>
+    <tr><td id="name"><%= link_to @user.name, edit_user_path %></td></tr>
+    <tr><td id="bio"><%= @user.bio %></td></tr>
 
-<p>
-  <strong>Tweets :</strong>
-</p>
+  </table>
+
+  <%= render 'tweets/form', 'tweet': @new_tweet %>
+
+</div>
 
 <% @tweets.each do |tweet| %>
-    <div>
+    <div class="tweet">
+      <img src="<%= tweet.user.img_url %>" alt="" class="img-user-tweet">
       <p> <%= tweet.content %></p>
+
     </div>
 <% end %>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
 
-<%= render 'tweets/form', 'tweet': @new_tweet %>
+
+
+
+</div>

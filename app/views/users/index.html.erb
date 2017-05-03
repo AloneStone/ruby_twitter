@@ -1,10 +1,11 @@
 <!--<p id="notice"><%= notice %></p>-->
 
+
     <% @users.each do |user| %>
         <div class = "note-list">
           <table>
         <tr><td><img src=<%= user.img_url %> alt="Smileyface"></td></tr>
-        <tr><td id="name"><%= link_to user.name, user %></td></tr>
+        <tr><td id="name"><%= link_to user.name, edit_user_tweet_path %></td></tr>
         <tr><td id="bio"><%= user.bio %></td></tr>
         <!--<td><%= user.img_url %></td>-->
           </table>
