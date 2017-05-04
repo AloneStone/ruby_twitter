@@ -1,17 +1,61 @@
 <div class="show">
 
-<div class = "note-list">
+  <div class="container">
+    <header>
+      <div class="bio">
+        <img src="http://www.croop.cl/UI/twitter/images/up.jpg" alt="background" class="bg">
+        <div class="desc">
+          <h3>@<%= link_to @user.name, edit_user_path %></h3>
+          <p><%= @user.bio%></p>
+        </div>
+      </div>
 
-  <table >
+      <div class="avatarcontainer">
+        <img src=<%= @user.img_url%> alt="avatar" class="avatar">
+
+        <div class="hover">
+          <div class="icon-twitter"></div>
+        </div>
+      </div>
+
+
+    </header>
+
+    <div class="content">
+      <div class="data">
+        <ul class="datauser">
+          <li>
+            <%= @user.tweets.count %>
+            <span>Tweets</span>
+          </li>
+          <li>
+            1,119
+            <span>Followers</span>
+          </li>
+          <li>
+            530
+            <span>Following</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <%= render 'tweets/form', 'tweet': @new_tweet %>
+  </div>
+
+
+
+
+
+  <!--<table >
     <tr><td><img src=<%= @user.img_url %> alt="Smileyface"></td></tr>
     <tr><td id="name"><%= link_to @user.name, edit_user_path %></td></tr>
     <tr><td id="bio"><%= @user.bio %></td></tr>
 
-  </table>
+  </table>-->
 
-  <%= render 'tweets/form', 'tweet': @new_tweet %>
 
-</div>
+
   <div class="tweets">
 <% @tweets.each do |tweet| %>
     <div class="tweet">
@@ -28,6 +72,6 @@
 
 
 
-
+</div>
 
 </div>

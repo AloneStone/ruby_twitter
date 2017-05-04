@@ -17,7 +17,13 @@ body{
     background-color: #dadada;
 }
 
-a.action-button {
+.animate, button
+{
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+a.action-button, button{
 
     transition: all 0.1s;
     -webkit-transition: all 0.1s;
@@ -37,7 +43,7 @@ a.action-button {
 
 }
 
-.action-button:active{
+.action-button:active, button{
 
     transform: translate(0px,5px);
     -webkit-transform: translate(0px,5px);
