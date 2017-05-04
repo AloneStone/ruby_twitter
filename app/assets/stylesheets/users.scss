@@ -49,14 +49,55 @@ td {
 
 .show{
   margin-left: 65px;
+  width: 100%;
+
 
 }
 .tweet{
   width: 100%;
+  background: #FFFFFF;
+  margin: 10px;
+  border-radius: 10px;
+
+  img{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+
+
+  }
 }
+
+.tweets{
+  width: 50%;
+  margin: auto;
+
+
+
+
+}
+
+
+
+#tweet-author{
+  float: left;
+}
+
+.note-list{
+  width: 25%;
+}
+
+
+
+#date-tweet{
+  float: right;
+}
+
+
 .img-user-tweet{
   height: 3em;
   width: 3em;
   border-radius: 5px ;
 }
+
 

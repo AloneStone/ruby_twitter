@@ -12,14 +12,19 @@
   <%= render 'tweets/form', 'tweet': @new_tweet %>
 
 </div>
-
+  <div class="tweets">
 <% @tweets.each do |tweet| %>
     <div class="tweet">
-      <img src="<%= tweet.user.img_url %>" alt="" class="img-user-tweet">
+      <img src="<%= tweet.user.img_url %>" alt="" >
+      <p id="tweet-author"> <%= link_to @user.name, edit_user_path %> </p>
+      <p id="date-tweet"> <%= tweet.created_at.strftime("%d/%m/%Y") %></p>
       <p> <%= tweet.content %></p>
+
 
     </div>
 <% end %>
+  </div>
+
 
 
 
