@@ -14,11 +14,13 @@ class UsersController < ApplicationController
     #@new_tweet = Tweet.new
 
     @tweets = []
-    @user.followings.each do |f|
+    #@user.followings.each do |f|
+=begin
       f.posts.each do |p|
         @tweets << p
       end
     end
+=end
     @user.tweets.each do |p|
       @tweets << p
     end
@@ -41,8 +43,8 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    @user = User.new(user_params)
 
+    @user = User.new(user_params)
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
