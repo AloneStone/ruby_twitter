@@ -13,8 +13,22 @@
  *= require_tree .
  *= require_self
  */
-body{
-    background-color: #dadada;
+
+*,
+*::before,
+*::after {
+      box-sizing: border-box;
+     }
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: #DEDEDE;
+    color: #5a6674;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    /*background-color: #dadada;*/
 }
 
 .animate, button
