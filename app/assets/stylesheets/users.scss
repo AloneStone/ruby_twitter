@@ -19,7 +19,7 @@ table,tbody,td, tr{
   width: 100%;
 }
 
-.tweet img {
+.tweet img, .note-list img {
   height: 8em;
   width: 8em;
   border-radius: 10px ;
@@ -78,9 +78,9 @@ td {
   float: left;
 }
 
-.note-list{
+/*.note-list{
   width: 25%;
-}
+}*/
 
 #date-tweet{
   float: right;
