@@ -6,9 +6,9 @@
   <div class="container">
     <header>
       <div class="bio">
-        <img src="http://www.croop.cl/UI/twitter/images/up.jpg" alt="background" class="bg">
+        <img src=<%= @user.cover_picture%> alt="background" class="bg">
         <div class="desc">
-          <h3>@<%= link_to @user.name, edit_user_path %></h3>
+          <h3>@<%= link_to @user.name, edit_user_path, class: "a_edit_user" %></h3>
           <p><%= @user.bio%></p>
         </div>
       </div>

@@ -25,7 +25,7 @@ pre {
   font-size: 11px;
 }
 
-a {
+.index_name_user {
   color: #000;
   text-align: center;
   text-decoration:none;
@@ -43,6 +43,25 @@ a {
   }
 }
 
+
+.a_edit_user {
+  color: white;
+  text-align: center;
+  text-decoration:none;
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    color: #E74C3C;
+    text-decoration:underline;
+  }
+  &:link{
+    color: white;
+    /*text-decoration:none;*/
+  }
+}
+
 th {
   padding-bottom: 5px;
 }
@@ -54,7 +73,7 @@ td {
 }
 
 div {
-  &.field, &.actions {
+  &.field, &.actions, &#error_explanation , .field_with_errors{
     margin-bottom: 10px;
     text-align: center;
     width: 100%;

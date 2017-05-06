@@ -1,0 +1,15 @@
+<div class="container">
+  <h1 class="bvn">People who follow you</h1>
+
+  <div class="users">
+    <% @followers.each do |follower| %>
+        <div class="user">
+          <%= link_to image_tag(follower.img_url), follower %>
+          <h2 class="text-center"><%= follower.name %></h2>
+        </div>
+    <% end %>
+
+  </div>
+
+  <br>
+</div>
