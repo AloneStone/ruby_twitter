@@ -1,11 +1,13 @@
+
 <nav class="main-menu">
   <ul>
-    <li class="has-subnav"><a href="#">
+    <li class="has-subnav">
+      <a href=<%= user_url(@user) %>>
       <i class="fa fa-home fa-2x"></i>
       <span class="nav-text">
                             Home profile
                         </span></a></li>
-    <li class="has-subnav"><a href="#">
+    <li class="has-subnav"><a href=<%= edit_user_url(@user)%>>
       <i class="fa fa-pencil fa-2x"></i>
       <span class="nav-text">
                             Edit profile
@@ -20,7 +22,7 @@
       </a></li>
 
     <li class="has-subnav">
-      <a href="#">
+      <a href=<%= user_followings_url(@user) %>>
         <i class="fa fa-arrow-circle-right fa-2x"></i>
         <span class="nav-text">
                             Following
@@ -28,7 +30,7 @@
       </a></li>
 
     <li class="has-subnav">
-      <a href="#">
+      <a href=<%= user_followers_url(@user)%>>
         <i class="fa fa-arrow-circle-left fa-2x"></i>
         <span class="nav-text">
                             Followers
@@ -44,7 +46,7 @@
 
   <ul class="logout">
     <li>
-      <a href="#">
+      <a href="/">
         <i class="fa fa-power-off fa-2x"></i>
         <span class="nav-text">
                             Logout

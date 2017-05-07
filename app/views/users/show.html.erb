@@ -14,9 +14,9 @@
       </div>
 
       <div class="avatarcontainer">
-        <img src=<%= @user.img_url%> alt="avatar" class="avatar">
+        <img src=<%= @user.img_url%> alt="avatar" class="avataruser">
 
-        <div class="hover">
+        <div class="hoveruser">
           <div class="icon-twitter"></div>
         </div>
       </div>
@@ -32,11 +32,11 @@
             <span>Tweets</span>
           </li>
           <li>
-            1,119
+            <%= @user.followers.count %>
             <span>Followers</span>
           </li>
           <li>
-            530
+            <%= @user.followings.count %>
             <span>Following</span>
           </li>
         </ul>
@@ -59,7 +59,7 @@
 
 
 
-  <div class="tweets">
+<!--  <div class="tweets">
 <% @tweets.each do |tweet| %>
     <div class="tweet">
       <img src="<%= tweet.user.img_url %>" alt="" >
@@ -70,10 +70,32 @@
 
     </div>
 <% end %>
-  </div>
+  </div>-->
 
 
 
+      <ul class="timeline">
+      <% @tweets.each do |tweet| %>
+
+
+    <li>
+      <div class="avatar">
+        <img src=<%= tweet.user.img_url %> href=<%=user_path%> >
+      </div>
+      <div class="bubble-container">
+        <div class="bubble">
+
+          <h3>@<%= link_to @user.name, user_path, class: "usertweetpath" %></h3><br/>
+          <%= tweet.content %>
+
+        </div>
+
+        <div class="arrow"></div>
+      </div>
+    </li>
+
+  <% end %>
+      </ul>
 
 </div>
 

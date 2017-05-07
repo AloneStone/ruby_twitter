@@ -14,20 +14,17 @@ class UsersController < ApplicationController
     #@new_tweet = Tweet.new
 
     @tweets = []
-    #@user.followings.each do |f|
-=begin
-      f.posts.each do |p|
+    @user.followings.each do |f|
+      f.tweet.each do |p|
         @tweets << p
       end
     end
-=end
+
     @user.tweets.each do |p|
       @tweets << p
     end
+    @tweets.sort_by(&:created_at).reverse!
 
-    @tweets.sort_by{|e| e[:created_at]}
-
-    @tweets = @user.tweets
     @new_tweet = Tweet.new
   end
 
