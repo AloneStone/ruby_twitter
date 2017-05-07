@@ -15,7 +15,7 @@ class UsersController < ApplicationController
 
     @tweets = []
     @user.followings.each do |f|
-      f.tweet.each do |p|
+      f.tweets.each do |p|
         @tweets << p
       end
     end
@@ -23,7 +23,7 @@ class UsersController < ApplicationController
     @user.tweets.each do |p|
       @tweets << p
     end
-    @tweets.sort_by(&:created_at).reverse!
+    @tweets = @tweets.sort_by(&:created_at).reverse
 
     @new_tweet = Tweet.new
   end

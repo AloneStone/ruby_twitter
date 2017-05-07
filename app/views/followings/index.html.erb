@@ -1,27 +1,46 @@
 <%= render 'layouts/mainmenu' %>
+<div class="containerfollowers">
 
-<div class="container">
 
-  <p id="notice"><%= notice %></p>
+  <span class="followers">
+<h1>People you follow </h1>
 
-  <h1>People you follow </h1>
+   <% @followings.each do |following| %>
+        <div class = "note-list">
+          <table>
+            <tr><td><img src=<%= following.img_url %> alt="Smileyface"></td></tr>
+            <tr><td id="name"><%= link_to following.name, following, class: 'index_name_user' %></td></tr>
+          </table>
+          <ul>
+            <li><%= link_to "Unfollow", user_following_path(@user.id, following),
+                            class:'action-button shadow animate red', method: :delete, data: { confirm: 'Are you sure?' }%></li>
+          </ul>
 
-  <div class="users">
-    <% @followings.each do |following| %>
-        <div class="user">
-          <%= link_to image_tag(following.img_url), following %>
-          <h2 class="text-center"><%= following.name %></h2>
-          <div class="buttons">
-            <%= link_to user_following_path(@user.id, following), method: :delete, data: { confirm: 'Are you sure?' } do %>
-                <%= icon('trash', class: 'fa-2x', title:'Delete user from your list') %>
-            <% end %>
-          </div>
+
         </div>
+
     <% end %>
-  </div>
-  <div class="user">
-    <%= link_to new_user_following_path do %>
-        <div class="placeholder"></div>
-    <% end %>
-  </div>
+
+  </span>
+
+
+
+
+
+<span class="not_followers">
+  <h1>People you don't follow </h1>
+  <% @not_followings.each do |not_following| %>
+      <div class = "note-list">
+        <table>
+          <tr><td><img src=<%= not_following.img_url %> alt="Smileyface"></td></tr>
+          <tr><td id="name"><%= link_to not_following.name, not_following, class: 'index_name_user' %></td></tr>
+        </table>
+        <ul>
+          <li><%= link_to "Follow", user_following_path(@user.id, not_following), class:'action-button shadow animate red',
+                      method: :put %></li>
+        </ul>
+
+      </div>
+  <% end %>
+</span>
 </div>

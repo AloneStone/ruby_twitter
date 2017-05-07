@@ -5,6 +5,7 @@ class FollowingsController < ApplicationController
   # GET /users.json
   def index
     @followings = @user.followings
+    @not_followings = User.where.not(id:@user.followings(&:id)).where.not(id:@user.id)
   end
 
   # GET /users/1
@@ -14,8 +15,6 @@ class FollowingsController < ApplicationController
 
   # GET /users/new
   def new
-    @followings = @user.followings
-    @not_followings = User.where.not(id:@user.followings(&:id)).where.not(id:@user.id)
   end
 
   # GET /users/1/edit
