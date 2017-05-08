@@ -80,12 +80,12 @@
 
     <li>
       <div class="avatar">
-        <img src=<%= tweet.user.img_url %> href=<%=user_path%> >
+        <img src=<%= tweet.user.img_url %> >
       </div>
       <div class="bubble-container">
         <div class="bubble">
 
-          <h3>@<%= link_to tweet.user.name, user_path, class: "usertweetpath" %></h3><br/>
+          <h3>@<%= link_to tweet.user.name, "/users/"+tweet.user.id.to_s, class: "usertweetpath" %></h3><br/>
           <%= tweet.content %>
 
         </div>
