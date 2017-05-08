@@ -6,9 +6,10 @@ Rails
 
 ## Getting Started
 
-'''bash
+```bash
 bundle install
 rake db:setup
-bundle exec rails s'''
+bundle exec rails s
+```
 
 Go to: http://localhost:3000
