@@ -5,9 +5,21 @@
 
   <div class="users">
     <% @followers.each do |follower| %>
-        <div class="user">
+<!--        <div class="user">
           <%= link_to image_tag(follower.img_url), follower %>
           <h2 class="text-center"><%= follower.name %></h2>
+        </div>-->
+
+
+        <div class = "note-list">
+          <table>
+            <tr><td><img src=<%= follower.img_url %> alt="Smileyface"></td></tr>
+            <tr><td id="name"><%= link_to follower.name, follower, class: 'index_name_user' %></td></tr>
+            <tr><td id="bio"><%= follower.bio %></td></tr>
+          </table>
+
+
+
         </div>
     <% end %>
 
