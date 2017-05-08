@@ -85,7 +85,7 @@
       <div class="bubble-container">
         <div class="bubble">
 
-          <h3>@<%= link_to @user.name, user_path, class: "usertweetpath" %></h3><br/>
+          <h3>@<%= link_to tweet.user.name, user_path, class: "usertweetpath" %></h3><br/>
           <%= tweet.content %>
 
         </div>
